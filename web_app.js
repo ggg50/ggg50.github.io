@@ -1,7 +1,6 @@
 
 let p1 = document.getElementsByTagName("p")[0];
 let p2 = document.getElementsByTagName("p")[1];
-
 let result_text = document.getElementById("result_text"),
     but_search = document.getElementById("but_search"),
     inp_search = document.getElementById("inp_search"),
@@ -25,7 +24,7 @@ let result = {
   level: document.createElement("div")
 };
 
-let data;
+
 
 let badge = [
   "badge badge-primary",
@@ -37,10 +36,10 @@ let badge = [
 ];
 
 p1.textContent = 11111;
-$.getJSON( "./article_data/data.json", function(json) {
+$.getJSON( "article_data/data.json", function(json) {
   data = json;
   p1.textContent = 2222;
-});
+}, "json");
 
 
 function nav_unactive() {
