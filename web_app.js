@@ -35,12 +35,6 @@ let badge = [
   "badge badge-info"
 ];
 
-p1.textContent = 11111;
-$.getJSON( "article_data/data.json", function(json) {
-  data = json;
-  p1.textContent = 2222;
-}, "json");
-
 
 function nav_unactive() {
   nav.forEach(n => n.className = "nav-link");
