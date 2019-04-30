@@ -47,7 +47,7 @@ but_search.onclick = function(){
   nav_unactive();
   nav_search.className = "nav-link active";
   let found = search(inp_search.value, data)
-  result.search.title.textContent = "";
+  result.search.textContent = "";
   result.search.appendChild(found);
   result_text.textContent = "";
   result_text.appendChild(result.search);
