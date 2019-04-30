@@ -58,8 +58,8 @@ but_sort.onclick = function(){
   nav_sort.className = "nav-link active";
   result.sort.textContent = "";
   result.sort.appendChild(get_sort(inp_sort.value, data));
-  result_text.search.textContent = "";
-  result_text.search.appendChild(result.sort);
+  result_text.textContent = "";
+  result_text.appendChild(result.sort);
 }
 
 but_sort_list.onclick = function() {
@@ -83,6 +83,8 @@ but_level.onclick = function() {
 nav_search.onclick = function(){
   nav_unactive();
   nav_search.className = "nav-link active";
+  result_text.textContent = "";
+  result_text.appendChild(result.search);
 }
 nav_sort.onclick = function(){
   nav_unactive();
