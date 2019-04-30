@@ -208,6 +208,7 @@ function get_sort_list(data) {
 
 function get_sort(sort_text, data) {
   let sort = document.createElement("div");
+  if(/；/.test(sort_text)) sort_text = sort_text.replace(/；/g, ";");
   let sort_array = sort_text.split(';');
   sort_array.forEach(s => {
     sort.appendChild(elt("div", {
